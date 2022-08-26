@@ -1,0 +1,34 @@
+// create class Book with two fields
+class Book{
+    private int title;
+    private int numberOfPages;
+}
+
+// define class Novel to extends Book
+class Novel extends Book{
+    // nothing here
+}
+
+// define class TextBook to extends class Book
+class TextBook extends Book{
+    // nothing here
+}
+
+class HelloWorld {
+    public static void main(String[] args) {
+        // create variables 
+        // this way is correct creasion according to Polymorphism concept 
+        
+        Book someBook = new Book();
+
+        Book someBook2 = new Novel();
+        
+        Book someTextBook = new TextBook();
+        
+        Novel someNovel = new Novel();
+        
+        TextBook someTextBook2 = new TextBook();
+        
+        System.out.println("Hello, World!");
+    }
+}
