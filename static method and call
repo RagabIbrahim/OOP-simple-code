@@ -1,0 +1,23 @@
+// create class clculator
+// create add and subtract method that are standalone 
+class Calculator {
+
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static int subtract(int a, int b) {
+        return a - b;
+    }
+
+}
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        // Print the add of two variable without need to create object
+        System.out.print("The addition is " + Calculator.add(8,9));
+        System.out.print(System.lineSeparator());
+        // print subtract of two values
+        System.out.print(" The subtract is " + Calculator.subtract(8,9));
+    }
+}
