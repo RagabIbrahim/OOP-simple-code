@@ -1,0 +1,35 @@
+// create class Room
+class Room{
+   private double width;
+   private double height;
+   public Room(double width, double height){
+      this.width = width;
+      this.height =height;
+   }
+   
+   // this function no need to override so for more security put  word "final"
+   public final double getArea(){
+      return width*height;
+   }
+}
+
+// create class LivingRoom that extends class Room
+class LivingRoom extends Room{
+   // The constructor simply calls the parent's constructor using super()
+   // super to pass parameter to fields
+   public LivingRoom(double width, double height){
+        super(width,height);
+    }
+   // Not allowed to override getArea() here
+}
+
+class HelloWorld {
+    public static void main(String[] args) {
+    
+        // create variable of type LivingRoom and call function getArea()
+        LivingRoom myLivingRoom = new LivingRoom(5,3);
+        double area = myLivingRoom.getArea();
+        System.out.println(area);
+
+    }
+}
